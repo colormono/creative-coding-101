@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
+
+    <title>Introducción a la Programación</title>
+
+    <link rel="stylesheet" href="dist/reset.css" />
+    <link rel="stylesheet" href="dist/reveal.css" />
+    <link rel="stylesheet" href="dist/theme/black.css" />
+
+    <!-- Theme used for syntax highlighted code -->
+    <link rel="stylesheet" href="plugin/highlight/monokai.css" />
+  </head>
+  <body>
+    <div class="reveal">
+      <div class="slides">
+        <!-- Apertura -->
+        <section>
+          <section>
+            <h3>Introducción a la Programación</h3>
+          </section>
+          <section>Mariano Rivas</section>
+          <section>
+            <a href="https://colormono.com/cursos/inpr">Notas del curso</a>
+          </section>
+          <section>
+            <img
+              class="r-stretch"
+              data-src="https://file.notion.so/f/f/f5e9760e-ea86-47c9-b71b-a85f2bf8b163/f76d6cc7-dc8f-4f3d-8689-37250a1bb6f3/Untitled.png?id=28d08617-9ab5-4e83-99cb-3f5bb8a23a0f&table=block&spaceId=f5e9760e-ea86-47c9-b71b-a85f2bf8b163&expirationTimestamp=1714860000000&signature=rc-71q6UaosArvWUSYsKuAInWvYvYagEv8-rRkjTXbc&downloadName=Untitled.png"
+            />
+          </section>
+        </section>
+
+        <!-- 01: Introducción -->
+        <section data-background-color="blue">
+          <section>Processing</section>
+          <section>
+            <img data-src="./assets/download-install.jpeg" class="r-stretch" />
+          </section>
+          <section>
+            <img data-src="./assets/ide-processing.png" class="r-stretch" />
+          </section>
+          <section>Vertical Slide 2</section>
+        </section>
+
+        <!-- 02: Dibujando formas -->
+        <section>
+          <section>Hello, World!</section>
+          <section>
+            <pre><code data-trim data-noescape>
+						(def lazy-fib
+							(concat
+							 [0 1]
+							 ((fn rfib [a b]
+										(lazy-cons (+ a b) (rfib b (+ a b)))) 0 1)))
+							</code></pre>
+          </section>
+          <section>
+            <textarea data-template>## Slide 1</textarea>
+          </section>
+        </section>
+
+        <!-- 03: Variables y tipos de datos -->
+        <!-- 04: Imagenes -->
+        <!-- 05: Codicionales -->
+        <!-- 06: Loops -->
+        <!-- 07: Interactividad -->
+        <!-- 08: Funciones -->
+        <!-- 09: Arreglos -->
+        <!-- 10: Objetos -->
+        <!-- 11: Imagen y video -->
+        <!-- 12: Sonido -->
+        <!-- 13: Hardware -->
+        <!-- 14: Siguientes pasos -->
+        <!-- 15: Cierre -->
+        <section id="grand-finale">
+          <h2>The end</h2>
+          <a href="#/0">Ir al inicio</a>
+        </section>
+      </div>
+    </div>
+
+    <script src="dist/reveal.js"></script>
+    <script src="plugin/notes/notes.js"></script>
+    <script src="plugin/markdown/markdown.js"></script>
+    <script src="plugin/highlight/highlight.js"></script>
+    <script>
+      // More info about initialization & config:
+      // - https://revealjs.com/initialization/
+      // - https://revealjs.com/config/
+      Reveal.initialize({
+        hash: true,
+
+        // Learn about plugins: https://revealjs.com/plugins/
+        plugins: [RevealMarkdown, RevealHighlight, RevealNotes],
+      });
+    </script>
+  </body>
+</html>
