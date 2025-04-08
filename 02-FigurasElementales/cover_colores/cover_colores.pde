@@ -25,7 +25,7 @@ void generate() {
   translate(width/2 - 250, height/2 - 100);
 
   stroke(c2); // color del trazo
-  strokeWeight(2); // grosor del trazo
+  strokeWeight(10); // grosor del trazo
 
   // dibujar un punto
   point(50, 100);
